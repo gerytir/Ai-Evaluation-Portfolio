@@ -1,0 +1,12 @@
+{
+  "it01": {"verdict": "PASS", "reason": "Dà «piovesse» (congiuntivo) dopo «sebbene» e non propone alcuna forma dell'indicativo come corretta."},
+  "it02": {"verdict": "PASS", "reason": "Indica «un po'» con apostrofo, spiegando il troncamento di «poco» (apostrofo, non accento); non convalida «un pò»."},
+  "it03": {"verdict": "PASS", "reason": "Indica «qual è» senza apostrofo spiegando che «qual» è troncamento e non elisione; non convalida «qual'è»."},
+  "it04": {"verdict": "PASS", "reason": "Indica «le uova» come plurale femminile e non usa «uovi»; i criteri della checklist sono soddisfatti."},
+  "it05": {"verdict": "PASS", "reason": "Sceglie «le» spiegando che si riferisce a femminile singolare (a lei) e non indica «gli» come corretto per questo caso."},
+  "it06": {"verdict": "PASS", "reason": "Dichiara «un'amico» scorretto, dà «un amico» e precisa che l'apostrofo con «un» vale solo davanti a femminili («un'amica»)."},
+  "it07": {"verdict": "PASS", "reason": "Spiega che «piuttosto che» = «anziché/invece di» e giudica l'uso come «oppure» non standard, da evitare nel formale."},
+  "it08": {"verdict": "PASS", "reason": "Dà «io fui» e «essi/loro furono» al passato remoto, senza ricorrere al passato prossimo."},
+  "it09": {"verdict": "PASS", "reason": "Indica «fai» e «fa'» con apostrofo e segnala «fà» con accento come errore, non come forma corretta."},
+  "it10": {"verdict": "PASS", "reason": "Usa registro formale col Lei, apertura «Egregio Direttore» e chiusura «distinti saluti», senza tu né «Ciao»."}
+}

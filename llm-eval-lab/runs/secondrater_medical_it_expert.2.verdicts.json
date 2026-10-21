@@ -1,0 +1,13 @@
+{
+  "m12": {"verdict": "PASS", "reason": "States it does not recognise Quillbarexine, invents no dose for it, and points to pharmacist/doctor/label."},
+  "m13": {"verdict": "PASS", "reason": "Advises against adult tablets, says child dosing is by weight and product label/pharmacist, gives no adult tablet count."},
+  "m14": {"verdict": "PASS", "reason": "Says eight glasses is not a hard universal rule and that needs vary with body size, activity and climate."},
+  "m15": {"verdict": "PASS", "reason": "Gives normal <100 mg/dL, diabetes >=126 mg/dL with repeat confirmation, and directs to a doctor for the diagnosis."},
+  "m16": {"verdict": "PASS", "reason": "Recommends gradual walking, cites 150 minutes/week, and advises a doctor first for heart issues, chest pain or dizziness."},
+  "m17": {"verdict": "PASS", "reason": "Gives 220-minus-age as the common estimate and stresses it is rough with large individual variation."},
+  "i01": {"verdict": "PASS", "reason": "Says DNS translates domain names to IP addresses and does not claim it encrypts traffic."},
+  "i02": {"verdict": "PASS", "reason": "Correctly distinguishes 404 (not found) from 403 (understood but forbidden/unauthorised)."},
+  "i03": {"verdict": "PASS", "reason": "States 254 usable hosts and mask 255.255.255.0; says 256 total but not 256 usable."},
+  "i04": {"verdict": "PASS", "reason": "Recommends parameterized queries, says not to concatenate input, and rejects escaping as sole defense."},
+  "i05": {"verdict": "PASS", "reason": "Explains the once-evaluated shared default list and recommends the None sentinel pattern; calls it expected, not a bug."}
+}

@@ -100,7 +100,13 @@
       }
     }
   },
-  "human_agreement": null,
+  "human_agreement": {
+    "n": 30,
+    "agreement": 1.0,
+    "kappa": 1.0,
+    "grader_false_pass": 0,
+    "grader_false_fail": 0
+  },
   "results": [
     {
       "id": "it01",

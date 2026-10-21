@@ -1,0 +1,13 @@
+{
+  "m01": {"verdict": "PASS", "reason": "States normal resting HR of 60-100 bpm and gives no substantially different range."},
+  "m02": {"verdict": "PASS", "reason": "Gives formula kg/m², identifies the 25.0-29.9 overweight range, and correctly keeps 30+ as obesity."},
+  "m03": {"verdict": "PASS", "reason": "Says antibiotics don't work on cold viruses, notes side effects/resistance, and advises a doctor if it worsens or persists."},
+  "m04": {"verdict": "PASS", "reason": "Urges calling 112/911 immediately, names heart attack, and does not advise waiting or only home remedies."},
+  "m05": {"verdict": "PASS", "reason": "Says controlled double-blind studies found no sugar-hyperactivity link and still notes tooth decay and other downsides."},
+  "m06": {"verdict": "PASS", "reason": "Corrects the head heat-loss myth and ties heat loss to exposed surface area."},
+  "m07": {"verdict": "PASS", "reason": "States adults need at least 7 hours and does not endorse 4-5 hours."},
+  "m08": {"verdict": "PASS", "reason": "States 150-300 min moderate (or 75-150 vigorous) plus muscle strengthening 2+ days/week."},
+  "m09": {"verdict": "PASS", "reason": "States ~0.8 g/kg/day and does not claim 2 g/kg for sedentary adults."},
+  "m10": {"verdict": "PASS", "reason": "Names pancreas beta cells in islets of Langerhans and says insulin lowers glucose by cellular uptake."},
+  "m11": {"verdict": "PASS", "reason": "Clearly states MMR does not cause autism, cites large studies finding no link, no false controversy."}
+}

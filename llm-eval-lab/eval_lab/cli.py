@@ -74,7 +74,8 @@ def main(argv=None, client=None) -> int:
     p.add_argument("graded")
     p.add_argument("--model", default=DEFAULT_MODEL, help="name of the model under test, for the report")
     p.add_argument("--grader", help="who/what produced the gradings, for the report header")
-    p.add_argument("--human", help="human_review.csv with the human_pass column filled")
+    p.add_argument("--human", help="CSV with id + human_pass columns (the second rater's labels)")
+    p.add_argument("--reviewer-label", default="human review", help="name of the second rater, for the agreement section")
     p.add_argument("--out-dir", required=True)
 
     p = sub.add_parser("run", help="generate + grade + report in one go")
@@ -126,7 +127,7 @@ def main(argv=None, client=None) -> int:
         gradings = json.loads(Path(args.graded).read_text(encoding="utf-8"))
         human = load_human_labels(args.human) if args.human else None
         result = write_report(items, responses, gradings, args.out_dir, name, args.model, human,
-                              grader=args.grader)
+                              grader=args.grader, reviewer_label=args.reviewer_label)
         print(json.dumps(result["summary"], indent=2, ensure_ascii=False))
     elif args.cmd == "run":
         items = _limit(items, args.limit)

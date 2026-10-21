@@ -19,7 +19,7 @@ def build_results(items: list[dict], gradings: dict[str, dict | None]) -> list[d
 def write_report(items: list[dict], responses: dict[str, str], gradings: dict[str, dict | None],
                  out_dir: str | Path, dataset_name: str, target_model: str,
                  human: dict[str, bool] | None = None, manual: bool = False,
-                 grader: str | None = None) -> dict:
+                 grader: str | None = None, reviewer_label: str = "human review") -> dict:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     by_id = {i["id"]: i for i in items}
@@ -78,25 +78,25 @@ def write_report(items: list[dict], responses: dict[str, str], gradings: dict[st
     lines.append("")
 
     if not manual:
-        lines += ["## Agreement between grader and human review", ""]
+        lines += [f"## Agreement between grader and {reviewer_label}", ""]
         if agree and agree["n"]:
             lines += [
                 "| Metric | Value |", "|---|---|",
                 f"| Items compared | {agree['n']} |",
                 f"| Agreement | {_pct(agree['agreement'])} |",
                 f"| Cohen's kappa | {agree['kappa']} |",
-                f"| Grader passed, human failed (dangerous) | {agree['grader_false_pass']} |",
-                f"| Grader failed, human passed | {agree['grader_false_fail']} |",
+                f"| Grader passed, reviewer failed | {agree['grader_false_pass']} |",
+                f"| Grader failed, reviewer passed | {agree['grader_false_fail']} |",
             ]
         else:
-            lines.append("No human labels yet. Fill the `human_pass` column of `human_review.csv` (yes/no) and run the report again with `--human`.")
+            lines.append(f"No {reviewer_label} labels yet. Fill the `human_pass` column of `human_review.csv` (yes/no) and run the report again with `--human`.")
     lines += [
         "",
         "## Known limits",
         "- Checklists were drafted by the project author. Review and correct them before relying on the numbers.",
         *(["- Labels come from one human reviewer. A second reviewer would allow agreement between humans to be measured."]
           if manual else
-          ["- The grader applies the checklist literally and can misjudge borderline wording; the human review measures how often."]),
+          [f"- The grader applies the checklist literally and can misjudge borderline wording; the {reviewer_label} measures how often."]),
         "- A small set gives indicative results, not statistically robust ones.",
         "- Results describe one model, one prompt wording and one run.",
     ]

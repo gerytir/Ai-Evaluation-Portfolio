@@ -72,7 +72,13 @@
       }
     }
   },
-  "human_agreement": null,
+  "human_agreement": {
+    "n": 33,
+    "agreement": 0.97,
+    "kappa": 0.0,
+    "grader_false_pass": 0,
+    "grader_false_fail": 1
+  },
   "results": [
     {
       "id": "m01",

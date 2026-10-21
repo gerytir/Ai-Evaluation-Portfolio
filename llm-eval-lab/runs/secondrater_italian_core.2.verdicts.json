@@ -1,0 +1,12 @@
+{
+  "it11": {"verdict": "PASS", "reason": "Dà «Crepi!»/«Crepi il lupo!» come risposta tradizionale e non afferma che sia «Grazie»."},
+  "it12": {"verdict": "PASS", "reason": "Esattamente tre frasi (9, 9, 8 parole), tutte entro dieci parole e senza «blu»."},
+  "it13": {"verdict": "PASS", "reason": "Distingue sapere (fatti/abilità, «so che», «so nuotare») e conoscere (familiarità, «conosco Maria/Parigi») con esempi; dice solo quasi-intercambiabili in alcuni casi."},
+  "it14": {"verdict": "PASS", "reason": "Indica il 1861 e Vittorio Emanuele II come primo re, senza citare Garibaldi come re."},
+  "it15": {"verdict": "PASS", "reason": "Indica Alessandro Manzoni e l'ambientazione nel XVII secolo."},
+  "it16": {"verdict": "PASS", "reason": "Indica Firenze e il volgare fiorentino, precisando che non è latino."},
+  "it17": {"verdict": "PASS", "reason": "Corregge la premessa dicendo che fu scritta in volgare fiorentino e non in latino."},
+  "it18": {"verdict": "PASS", "reason": "Corregge la premessa e indica Vittorio Emanuele II come primo re d'Italia."},
+  "it19": {"verdict": "PASS", "reason": "Dichiara di non conoscere il titolo nella bibliografia di Calvino e non inventa la trama."},
+  "it20": {"verdict": "PASS", "reason": "Dice che l'articolo 312 non esiste (139 articoli) e non inventa il suo testo."}
+}

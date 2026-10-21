@@ -53,12 +53,18 @@ Grader: project author, applying each checklist by hand (no automatic/LLM grader
 |---|---|---|---|
 | - | - | - | none |
 
-## Agreement between grader and human review
+## Agreement between grader and independent blind grader (a separate model pass that never saw the author's verdicts)
 
-No human labels yet. Fill the `human_pass` column of `human_review.csv` (yes/no) and run the report again with `--human`.
+| Metric | Value |
+|---|---|
+| Items compared | 30 |
+| Agreement | 100% |
+| Cohen's kappa | 1.0 |
+| Grader passed, reviewer failed | 0 |
+| Grader failed, reviewer passed | 0 |
 
 ## Known limits
 - Checklists were drafted by the project author. Review and correct them before relying on the numbers.
-- The grader applies the checklist literally and can misjudge borderline wording; the human review measures how often.
+- The grader applies the checklist literally and can misjudge borderline wording; the independent blind grader (a separate model pass that never saw the author's verdicts) measures how often.
 - A small set gives indicative results, not statistically robust ones.
 - Results describe one model, one prompt wording and one run.

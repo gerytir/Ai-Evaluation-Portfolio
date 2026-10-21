@@ -175,7 +175,7 @@ def test_report_files_are_written(tmp_path):
     out = report.write_report(items, responses, gradings, tmp_path, "demo", "model-x")
     assert out["summary"]["pass_rate"] == 0.5
     text = (tmp_path / "REPORT.md").read_text(encoding="utf-8")
-    assert "Failed items" in text and "No human labels yet" in text
+    assert "Failed items" in text and "No human review labels yet" in text
     rows = list(csv.DictReader((tmp_path / "human_review.csv").open(encoding="utf-8")))
     assert [r["id"] for r in rows] == ["a", "b"]
     assert (tmp_path / "results.json").exists()
